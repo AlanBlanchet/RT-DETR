@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "detr"
+version = "0.1.0"
+description = ""
+authors = ["Alan Blanchet <alan@alan-blanchet.fr>"]
+readme = "README.md"
+packages = [{ include = "detr", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+torch = "^2.1.0"
+torchvision = "^0.16.0"
+onnx = "^1.14.0"
+onnxruntime = ">=1.14.0"
+pycocotools = "*"
+PyYAML = "*"
+scipy = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
